@@ -25,18 +25,18 @@ Description : hmtl hompage for assignment 1
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="ENSF 381 Assignment 1">
     <meta name="author" content="Jin Kim, Sebastian Nieto">
-
+    <!-- title stuff and favicon -->
     <title>R34 | Home</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="image_assets/favicon.ico" type="image/x-icon">
 </head>
-<body style="margin:0%">
+<body style="margin:0%; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
     <header style="background-color:rgb(0, 0, 0); margin: 0%">
         <!-- logo and website name go here: This is where your website's logo and name should be placed. The logo should
             be placed at the top left and the company name should be placed right after the logo.-->
             <div style="display: flex; align-items: center;">
                 <img src="image_assets/cat_logo.jpeg" alt="R34 logo" width="125" height="125" style="margin-right: 10px">
-                <h1 style="display: inline-block; color:white; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; letter-spacing:2px; font-size:50px">R34</h1>
+                <h1 style="display: inline-block; color:white; letter-spacing:2px; font-size:50px"><b>R34</b></h1>
             </div>
     </header>
 
@@ -44,11 +44,11 @@ Description : hmtl hompage for assignment 1
         <!-- navigation links go here: The navigation links to other pages (home.html, products.html, contact.html, and
             login.html) are placed directly below the header. -->
         <nav style="background-color:rgb(0, 0, 0); margin-top: 0%">
-            <ul style="display: flex; justify-content: space-around; padding: 7px; margin: 0%">
-                <li><a href="index.html" style="color:white; text-decoration: none">Home</a></li>
-                <li><a href="products.html" style="color:white; text-decoration: none">Products</a></li>
-                <li><a href="contact.html" style="color:white; text-decoration: none">Contact</a></li>
-                <li><a href="login.html" style="color:white; text-decoration: none">Login</a></li>
+            <ul style="display: flex; justify-content: space-around; padding: 7px; margin: 0; font-size:30px">
+                <li><a href="index.html" style="color:white; text-decoration: none">HOME</a></li>
+                <li><a href="products.html" style="color:white; text-decoration: none">PRODUCTS</a></li>
+                <li><a href="contact.html" style="color:white; text-decoration: none">CONTACT</a></li>
+                <li><a href="login.html" style="color:white; text-decoration: none">LOGIN</a></li>
             </ul>
     </div>
 
@@ -59,17 +59,59 @@ Description : hmtl hompage for assignment 1
             should be placed right under the “About Us” section. You must add at least two customer
             feedback in the “Customer Reviews” section. This section may contain a customer name
             followed by their review in a new line. -->
-        <!-- about us section -->
+
         <section class="about-us">
             <!-- about us contents go here -->
+            <div style="text-align: center; padding: 25px;">
+                <h2 style="font-size: 50px; margin-top: 10px; margin-bottom: 10px">ABOUT US</h2>
+                <p style="font-size: 20px; margin: 0%">
+                    At R34, our mission is to not only provide the highest quality garments in the market, but to also
+                    continue to innovate and push the boundaries of what is possible in this industry. We strive to give
+                    the absolute best customer service, ensuring that representatives are available 24/7 to assist with
+                    any inquiries/concerns. Additionally, we are committed to sustainable manufacturing practices, which
+                    is why we are proud to say that all of our products are made from 100% recycled materials. This is our
+                    <b><i>vision</i></b>. We believe that the future of fashion can be both sustainable and stylish, and we hope
+                    that you will join us in this journey.
+                </p><br>
+            </div>
         </section>
-
+    
         <section class="shop-now">
             <!-- shop now button (as a link to the products page) -->
+            <div style="text-align: center; padding: 0%">
+                <a href="products.html" style="text-decoration: none">
+                    <button style="font-size: 30px; padding: 10px; margin-top: 10px; margin-bottom: 10px">SHOP NOW</button><br>
+                </a>
+            </div>
         </section>
         <!-- customer reviews/testimonials section -->
         <section class="customer-reviews">
             <!-- add reviews as needed -->
+            <div style="padding: 25px">
+                <h2 style="text-align:center;font-size: 50px; margin-top: 10px; margin-bottom: 15px">CUSTOMER REVIEWS</h2>
+                <hr style="border: 2px solid black; margin-bottom: 15px">
+                <p style="font-size: 20px; margin: 0%;">
+                    <img src="image_assets/brontacotues.gif" alt="Lebron James" width="150" height="150" style="border-radius: 25px; margin-bottom: 10px">
+                    <h2 style="display: inline-block; font-size: 35px"><b>Lebron James</b></h2><br>
+                    "I was skeptical at first, but after trying on my new R34 hoodie, I was blown away. The quality is
+                    unmatched, and the fact that it's made from recycled materials is just the cherry on top. I will
+                    definitely be purchasing more from R34 in the future. I love wearing R34 on TACO TUESDAYYY!!!"
+                </p>
+                <p style="font-size: 20px; margin: 0%">
+                    <img src="image_assets/livvydunne.jpeg" alt="Livvy Dunne" width="150" height="150" style="border-radius: 25px; margin-bottom: 10px; object-fit: cover">
+                    <h2 style="display: inline-block; font-size: 35px"><b>Livvy Dunne</b></h2><br>
+                    "I've been a loyal customer of R34 for years now, and I can confidently say that they have never
+                    disappointed me. The customer service is top-notch, and the products are always of the highest quality.
+                    I highly recommend R34 to anyone looking for sustainable, stylish clothing."
+                </p>
+                <p style="font-size: 20px; margin: 0%">
+                    <img src="image_assets/jamescharles.jpeg" alt="James Charles" width="150" height="150" style="border-radius: 25px; margin-bottom: 10px; object-fit: cover">
+                    <h2 style="display: inline-block; font-size: 35px"><b>James Charles</b></h2><br>
+                    "Hey sisters! I've been a loyal customer of R34 for years now, and I can confidently say that they have never
+                    disappointed me. The customer service is top-notch, and the products are always of the highest quality.
+                    I highly recommend R34 to anyone looking for sustainable, stylish clothing."
+                </p>
+            
         </section>
     </main>
 
