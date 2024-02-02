@@ -30,18 +30,26 @@ Description : hmtl hompage for assignment 1
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="image_assets/favicon.ico" type="image/x-icon">
 </head>
-<body>
-    <header>
+<body style="margin:0%">
+    <header style="background-color:rgb(0, 0, 0); margin: 0%">
         <!-- logo and website name go here: This is where your website's logo and name should be placed. The logo should
             be placed at the top left and the company name should be placed right after the logo.-->
-            <img src="image_assets/cat_logo.jpeg" alt="Jin and Sebastian's shop logo" width="200" height="200">
-            <h1>R34</h1>
-            
+            <div style="display: flex; align-items: center;">
+                <img src="image_assets/cat_logo.jpeg" alt="R34 logo" width="125" height="125" style="margin-right: 10px">
+                <h1 style="display: inline-block; color:white; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; letter-spacing:2px; font-size:50px">R34</h1>
+            </div>
     </header>
 
     <div>
         <!-- navigation links go here: The navigation links to other pages (home.html, products.html, contact.html, and
             login.html) are placed directly below the header. -->
+        <nav style="background-color:rgb(0, 0, 0); margin-top: 0%">
+            <ul style="display: flex; justify-content: space-around; padding: 7px; margin: 0%">
+                <li><a href="index.html" style="color:white; text-decoration: none">Home</a></li>
+                <li><a href="products.html" style="color:white; text-decoration: none">Products</a></li>
+                <li><a href="contact.html" style="color:white; text-decoration: none">Contact</a></li>
+                <li><a href="login.html" style="color:white; text-decoration: none">Login</a></li>
+            </ul>
     </div>
 
     <main>
