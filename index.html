@@ -20,16 +20,174 @@ Description : hmtl hompage for assignment 1
 <html lang="en">
 <head>
     <!-- add meta tags, title, and link to style.css here -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ENSF 381 Assignment 1">
+    <meta name="author" content="Jin Kim, Sebastian Nieto">
+
+    <title>R34 | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../image_assets/favicon.ico" type="image/x-icon">
+    
+    <!-- assignment said we will use style.css in the next deliverable but we want to make our website somewhat presentable at least.-->
+    <style>
+        #navi-links {
+            display: flex;
+            justify-content: space-around;
+            font-size: 200%;
+            width: 100%;
+            margin: 0%;
+            padding: 0px;
+            list-style-type: none;
+        }
+        
+        #navi-menu {
+            width: 100%;
+        }
+
+        .navi-options {
+            color:white;
+            text-decoration: none;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            
+        }
+
+        #header-section {
+            display: flex;
+            align-items: center;
+        }
+
+        #header-companyname {
+            display: inline-block;
+            color: white;
+            letter-spacing: 2px;
+            font-size: 50px;
+        }
+
+        #header-companylogo {
+            margin-right: 2%;
+            width:125px;
+            height:125px;
+        }
+
+        .about-us {
+            display: flex;
+            flex-direction: column;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 2%;
+        }
+
+        #aboutus-title {
+            justify-content: center;
+            font-size: 260%;
+            margin: 4%;
+        }
+
+        #aboutus-para {
+            font-size: 150%;
+            margin: auto;
+            max-width: 80%;
+        }
+
+        .shop-now {
+            display: flex;
+            justify-content: center;
+            margin: 1%;
+        }
+
+        #shopnow-block {
+            display: flex;
+            justify-content: center;
+        }
+
+        #shopnow-button {
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 150%;
+            margin: 1%;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        .customer-reviews {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            margin-top: 0%;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        #customer-review-title {
+            display: flex;
+            justify-content: center;
+            font-size: 200%;
+            margin: 2%;
+        }
+
+        .customer-review-img {
+            width: 165px;
+            margin: auto;
+        }
+
+        #copyright-text {
+            display: flex;
+            justify-content: center;
+            font-size: 150%;
+            margin: 1%;
+            color:white;
+        }
+
+        body {
+            margin: 0%;
+        }
+
+        header {
+            background-color:black;
+            width:100%;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        div {
+            display: flex;
+        }
+
+        nav {
+            background-color: black;
+            width: 100%;
+            padding: 0.35%;
+        }
+
+        footer {
+            background-color: black;
+            padding:10px;
+            margin-top: 0%;
+        }
+
+    </style>
+
 </head>
 <body>
     <header>
         <!-- logo and website name go here: This is where your website's logo and name should be placed. The logo should
             be placed at the top left and the company name should be placed right after the logo.-->
+        <div id="header-section">
+            <img id="header-companylogo" src="image_assets/cat_logo.jpeg" alt="R34 logo">
+            <h1 id="header-companyname"><b>R34</b></h1>
+        </div>
     </header>
 
-    <div>
+    <div id="navi-menu">
         <!-- navigation links go here: The navigation links to other pages (home.html, products.html, contact.html, and
             login.html) are placed directly below the header. -->
+        <nav>
+            <ul id="navi-links">
+                <li><a href="index.html" class="navi-options">HOME</a></li>
+                <li><a href="products.html"class="navi-options">PRODUCTS</a></li>
+                <li><a href="contact.html" class="navi-options">CONTACT</a></li>
+                <li><a href="login.html" class="navi-options">LOGIN</a></li>
+            </ul>
+        </nav>
     </div>
 
     <main>
@@ -39,22 +197,59 @@ Description : hmtl hompage for assignment 1
             should be placed right under the “About Us” section. You must add at least two customer
             feedback in the “Customer Reviews” section. This section may contain a customer name
             followed by their review in a new line. -->
-        <!-- about us section -->
         <section class="about-us">
             <!-- about us contents go here -->
+            <h2 id="aboutus-title">About Us</h2>
+            <hr style="border: 2px solid black; width: 90%; margin-bottom: 2%;">
+            <p id="aboutus-para">
+                At R34, our mission is to not only provide the highest quality garments in the market, but to also
+                continue to innovate and push the boundaries of what is possible in this industry. We strive to give
+                the absolute best customer service, ensuring that representatives are available 24/7 to assist with
+                any inquiries/concerns. Additionally, we are committed to sustainable manufacturing practices, which
+                is why we are proud to say that all of our products are made from 100% recycled materials. This is our
+                <i><b>vision</b></i>. We believe that the future of fashion can be both sustainable and stylish, and we hope
+                that you will join us in this journey.
+            </p>
         </section>
 
         <section class="shop-now">
             <!-- shop now button (as a link to the products page) -->
+            <div id="shopnow-block">
+                <a href="products.html">
+                    <button id="shopnow-button">SHOP NOW</button>
+                </a>
+            </div>
         </section>
         <!-- customer reviews/testimonials section -->
         <section class="customer-reviews">
             <!-- add reviews as needed -->
+            <h2 id="customer-review-title">Customer Reviews</h2>
+            <hr style="border: 2px solid black; width: 90%; margin-bottom: 2%;">
+            <table>
+                <tr>
+                    <td>
+                        <img src="image_assets/brontacotues.gif" alt="Lebron James" class="customer-review-img">
+                        <p>
+                            "The quality is unmatched, and the fact that it's made from recycled materials is just the cherry on top.
+                            I will definitely be purchasing more from R34 in the future. I love wearing R34 on TACO TUESDAYYY!!!"
+                        </p>
+                    </td>
+                    <th>
+                        <img src="image_assets/livvydunne.png" alt="Livvy Dunne" class="customer-review-img">
+                    </th>
+                    <th>
+                        <img src="image_assets/jamescharles.jpeg" alt="James Charles" class="customer-review-img">
+                    </th>
+                </tr>
+            </table>
         </section>
     </main>
 
     <footer>
         <!-- copyright notice goes here -->
+        <p id="copyright-text">
+            © 2024 R34 - Sebastian'n'Jin Incorp. All rights reserved.
+        </p>
     </footer>
 </body>
 </html>

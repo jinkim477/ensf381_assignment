@@ -20,16 +20,97 @@ Description : products page for assignment 1
 <html lang="en">
 <head>
 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ENSF 381 Assignment 1">
+    <meta name="author" content="Jin Kim, Sebastian Nieto">
+
+    <title>R34 | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../image_assets/favicon.ico" type="image/x-icon">
+
+    <style>
+        #navi-links {
+            display: flex;
+            justify-content: space-around;
+            font-size: 200%;
+            width: 100%;
+            margin: 0%;
+            padding: 0px;
+            list-style-type: none;
+        }
+        
+        #navi-menu {
+            width: 100%;
+        }
+
+        .navi-options {
+            color:white;
+            text-decoration: none;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            
+        }
+
+        #header-section {
+            display: flex;
+            align-items: center;
+        }
+
+        #header-companyname {
+            display: inline-block;
+            color: white;
+            letter-spacing: 2px;
+            font-size: 50px;
+        }
+
+        #header-companylogo {
+            margin-right: 2%;
+            width:125px;
+            height:125px;
+        }
+
+        body {
+            margin: 0%;
+        }
+
+        header {
+            background-color:black;
+            width:100%;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        div {
+            display: flex;
+        }
+
+        nav {
+            background-color: black;
+            width: 100%;
+            padding: 0.35%;
+        }
+    </style>
 </head>
 <body>
     <header>
         <!-- logo and website name go here: This is where your website's logo and name should be placed. The logo should
             be placed at the top left and the company name should be placed right after the logo.-->
+        <div id="header-section">
+            <img id="header-companylogo" src="image_assets/cat_logo.jpeg" alt="R34 logo">
+            <h1 id="header-companyname"><b>R34</b></h1>
+        </div>
     </header>
 
     <div>
         <!-- navigation links go here: The navigation links to other pages (home.html, products.html, contact.html, and
             login.html) are placed directly below the header. -->
+        <nav>
+            <ul id="navi-links">
+                <li><a href="index.html" class="navi-options">HOME</a></li>
+                <li><a href="products.html"class="navi-options">PRODUCTS</a></li>
+                <li><a href="contact.html" class="navi-options">CONTACT</a></li>
+                <li><a href="login.html" class="navi-options">LOGIN</a></li>
+            </ul>
+        </nav>
     </div>
 
     <main>
