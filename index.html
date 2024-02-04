@@ -125,9 +125,34 @@ Description : hmtl hompage for assignment 1
             margin: 2%;
         }
 
+        #customer-review-table {
+            margin-top: 2%;
+            margin-left: 2%;
+            margin-right: 2%;
+            margin-bottom: 0%;
+        }
+
+        .customer-review-person {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 2%;
+        }
+        
+        .customer-review-name {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin: 2%;
+        }
+
         .customer-review-img {
             width: 165px;
-            margin: auto;
+            margin: 1%;
+            border-radius: 20%;
+        }
+
+        .customer-review-message {
+            margin: 10%;
         }
 
         #copyright-text {
@@ -224,22 +249,39 @@ Description : hmtl hompage for assignment 1
         <section class="customer-reviews">
             <!-- add reviews as needed -->
             <h2 id="customer-review-title">Customer Reviews</h2>
-            <hr style="border: 2px solid black; width: 90%; margin-bottom: 2%;">
-            <table>
+            <hr style="border: 2px solid black; width: 90%; margin-bottom: 0%;">
+            <table id="customer-review-table">
                 <tr>
                     <td>
-                        <img src="image_assets/brontacotues.gif" alt="Lebron James" class="customer-review-img">
-                        <p>
+                        <div class="customer-review-person">
+                            <img src="image_assets/brontacotues.gif" alt="Lebron James" class="customer-review-img">
+                            <h2 class="customer-review-name">Lebron James</h2>
+                        </div>
+                        <p class="customer-review-message">
                             "The quality is unmatched, and the fact that it's made from recycled materials is just the cherry on top.
                             I will definitely be purchasing more from R34 in the future. I love wearing R34 on TACO TUESDAYYY!!!"
                         </p>
                     </td>
-                    <th>
-                        <img src="image_assets/livvydunne.png" alt="Livvy Dunne" class="customer-review-img">
-                    </th>
-                    <th>
-                        <img src="image_assets/jamescharles.jpeg" alt="James Charles" class="customer-review-img">
-                    </th>
+                    <td>
+                        <div class="customer-review-person">
+                            <img src="image_assets/livvydunne.png" alt="Livvy Dunne" class="customer-review-img">
+                            <h2 class="customer-review-name">Livvy Dunne</h2>
+                        </div>
+                        <p class="customer-review-message">
+                            "I've been a loyal customer of R34 for years now, and I can confidently say that they have never
+                            disappointed me. The customer service is top-notch, and the products are always of the highest quality."
+                        </p>
+                    </td>
+                    <td>
+                        <div class="customer-review-person">
+                            <img src="image_assets/jamescharles.jpeg" alt="James Charles" class="customer-review-img">
+                            <h2 class="customer-review-name">James Charles</h2>
+                        </div>
+                        <p class="customer-review-message">
+                            "Hey sisters! I've been a loyal customer of R34 for years now, and I can confidently say that they have never
+                            disappointed me. I highly recommend R34 to anyone looking for sustainable, stylish clothing."
+                        </p>
+                    </td>
                 </tr>
             </table>
         </section>
