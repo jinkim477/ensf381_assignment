@@ -69,6 +69,64 @@ Description : products page for assignment 1
             height:125px;
         }
 
+        #products-page-title {
+            text-align: center;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin-top: 4%;
+            margin-left: 2%;
+            margin-right: 2%;
+            margin-bottom: 0%;
+        }
+
+        #products-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:space-around;
+            margin-top: 0%;
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-bottom: 5%;
+        }
+
+        .product {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin: 7%;
+        }
+
+        .product-image {
+            width: 300px;
+            height: 300px;
+        }
+
+        .product-title {
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+        }
+
+        .product-price {
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+            font-size: 130%;
+            margin-top: 0;
+        }
+
+        .addtocart-button {
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 130%;
+            border-radius: 8px;
+        }
+
+        #copyright-text {
+            display: flex;
+            justify-content: center;
+            font-size: 150%;
+            margin: 1%;
+            color:white;
+        }
+
         body {
             margin: 0%;
         }
@@ -88,6 +146,13 @@ Description : products page for assignment 1
             width: 100%;
             padding: 0.35%;
         }
+
+        footer {
+            background-color: black;
+            padding:10px;
+            margin-top: 0%;
+        }
+
     </style>
 </head>
 <body>
@@ -118,10 +183,97 @@ Description : products page for assignment 1
             should be placed. Each product must be displayed with an image of the product, followed
             by the name, price, and a button to add the product to the cart. Use the heading element to
             display the name of the product. -->
+            <h1 id="products-page-title">ALL PRODUCTS</h1>
+
+            <hr style="display: flex; justify-content: center; border: 2px solid black; width: 90%; margin-top: 4%; margin-bottom: 0;">
+
+            <div id="products-container">
+
+                <div class="product">
+                    <img src="image_assets/shannonsharpe_tshirt.png" alt="Shannon Sharpe T-Shirt" class="product-image">
+                    <h2 class="product-title">
+                        "i be poppin bottles" - T Shirt
+                    </h2>
+                    <p class="product-price">
+                        $19.99
+                    </p>
+                    <button class="addtocart-button">
+                        ADD TO CART
+                    </button>
+                </div>
+
+                <div class="product">
+                    <img src="image_assets/joshgiddey_tshirt.png" alt="Josh Giddey T-Shirt" class="product-image">
+                    <h2 class="product-title">
+                        "legal." - T Shirt
+                    </h2>
+                    <p class="product-price">
+                        $16.00
+                    </p>
+                    <button class="addtocart-button">
+                        ADD TO CART
+                    </button>
+                </div>
+
+                <div class="product">
+                    <img src="image_assets/twoguys_tshirt.png" alt="Two Men T-Shirt" class="product-image">
+                    <h2 class="product-title">
+                        "brotherhood" - T Shirt
+                    </h2>
+                    <p class="product-price">
+                        $68.99
+                    </p>
+                    <button class="addtocart-button">
+                        ADD TO CART
+                    </button>
+                </div>
+
+                <div class="product">
+                    <img src="image_assets/gradey_tshirt.png" alt="Gradey Dick T-Shirt" class="product-image">
+                    <h2 class="product-title">
+                        "gradey the great" - T Shirt
+                    </h2>
+                    <p class="product-price">
+                        $19.99
+                    </p>
+                    <button class="addtocart-button">
+                        ADD TO CART
+                    </button>
+                </div>
+
+                <div class="product">
+                    <img src="image_assets/ogmudbone_tshirt.png" alt="OGMudbone T-Shirt" class="product-image">
+                    <h2 class="product-title">
+                        "OGMUDBONE" - T Shirt
+                    </h2>
+                    <p class="product-price">
+                        $24.99
+                    </p>
+                    <button class="addtocart-button">
+                        ADD TO CART
+                    </button>
+                </div>
+
+                <div class="product">
+                    <img src="image_assets/fiveplusone_tshirt.png" alt="Five One T-Shirt" class="product-image">
+                    <h2 class="product-title">
+                        "couchscene" - T Shirt
+                    </h2>
+                    <p class="product-price">
+                        $68.99
+                    </p>
+                    <button class="addtocart-button">
+                        ADD TO CART
+                    </button>
+                </div>
+            </div>
     </main>
     
     <footer>
         <!-- copyright notice goes here -->
+        <p id="copyright-text">
+            © 2024 R34 - Sebastian'n'Jin Incorp. All rights reserved.
+        </p>
     </footer>
 </body>
 </html>
