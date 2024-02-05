@@ -24,141 +24,18 @@ Description : login page for assignment 1
         <meta name="description" content="ENSF 381 Assignment 1">
         <meta name="author" content="Jin Kim, Sebastian Nieto">
     
-        <title>R34 | Home</title>
+        <title>SJR34 | Login</title>
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="../image_assets/favicon.ico" type="image/x-icon">
-            
-        <style>
-            #navi-links {
-                display: flex;
-                justify-content: space-around;
-                font-size: 200%;
-                width: 100%;
-                margin: 0%;
-                padding: 0px;
-                list-style-type: none;
-            }
-    
-            #navi-menu {
-                width: 100%;
-            }
-    
-            .navi-options {
-                color:white;
-                text-decoration: none;
-                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                
-            }
-    
-            #header-section {
-                display: flex;
-                align-items: center;
-            }
-    
-            #header-companyname {
-                display: inline-block;
-                color: white;
-                letter-spacing: 2px;
-                font-size: 50px;
-            }
-    
-            #header-companylogo {
-                margin-right: 2%;
-                width:125px;
-                height:125px;
-            }
-    
-            #login-form {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                margin: 2%;
-            }
-    
-            #username-label {
-                display: flex;
-                justify-content: center;
-                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                font-size: 200%;
-                margin: 1%;
-            }
-    
-            #password-label {
-                display: flex;
-                justify-content: center;
-                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                font-size: 200%;
-                margin: 1%;
-            }
-    
-            #login-button {
-                display: flex;
-                justify-content: center;
-                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                font-size: 175%;
-                margin: 1%;
-            }
-    
-            #no-account-text {
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-                margin: 2%;
-            }
-    
-            .no-account-subtexts {
-                display: flex;
-                justify-content: center;
-                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                font-size: 150%;
-                margin: 1%;
-            }
-    
-            #copyright-text {
-                display: flex;
-                justify-content: center;
-                font-size: 150%;
-                margin: 1%;
-                color:white;
-            }
-    
-            body {
-                margin: 0%;
-            }
-    
-            header {
-                background-color:black;
-                width:100%;
-                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            }
-    
-            div {
-                display: flex;
-            }
-    
-            nav {
-                background-color: black;
-                width: 100%;
-                padding: 0.35%;
-            }
-    
-            footer {
-                background-color: black;
-                padding:10px;
-                margin-top: 0%;
-            }
-    
-        </style>
     
     </head>
     <body>
         <header>
             <!-- logo and website name go here: This is where your website's logo and name should be placed. The logo should
                 be placed at the top left and the company name should be placed right after the logo.-->
-            <div id="header-section">
-                <img id="header-companylogo" src="image_assets/cat_logo.jpeg" alt="R34 logo">
-                <h1 id="header-companyname"><b>R34</b></h1>
+            <div>
+                <img src="image_assets/cat_logo.jpeg" alt="R34 logo" style="width:200px;height:200px">
+                <h1 style="display:inline"><b>SJR34</b></h1>
             </div>
         </header>
     
@@ -167,10 +44,10 @@ Description : login page for assignment 1
                 login.html) are placed directly below the header. -->
                 <nav>
                     <ul id="navi-links">
-                        <li><a href="index.html" class="navi-options">HOME</a></li>
-                        <li><a href="products.html"class="navi-options">PRODUCTS</a></li>
-                        <li><a href="contact.html" class="navi-options">CONTACT</a></li>
-                        <li><a href="login.html" class="navi-options">LOGIN</a></li>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="products.html">PRODUCTS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="login.html">LOGIN</a></li>
                     </ul>
                 </nav>
         </div>
@@ -181,18 +58,18 @@ Description : login page for assignment 1
                 at this moment. Password should be masked. You also need to include a link to sign up
                 page for new users. Do not need to create a web page for signup at this point. -->
     
-            <form action="login.php" method="post" id="login-form">
-                <label for="username" id="username-label">Username:</label><br>
+            <form action="login.php" method="post">
+                <label for="username">Username:</label><br>
                     <input type="text" id="username" name="username" placeholder="Enter Username"><br>
-                <label for="password" id="password-label">Password:</label><br>
+                <label for="password">Password:</label><br>
                     <input type="password" id="password" name="password" placeholder="Enter Password"><br><br>
-                    <input type="submit" value="Login" id="login-button">
+                    <input type="submit" value="Login">
             </form>
-            <div id="no-account-text">
-                <p class="no-account-subtexts">
+            <div>
+                <p>
                     Don't have an account?
                 </p>
-                <p class="no-account-subtexts">
+                <p>
                     <a href="signup.html">Sign up here!</a>
                 </p>
             </div>
@@ -200,8 +77,8 @@ Description : login page for assignment 1
         
         <footer>
             <!-- copyright notice goes here -->
-            <p id="copyright-text">
-                © 2024 R34 - Sebastian'n'Jin Incorp. All rights reserved.
+            <p>
+                © 2024 SJR34 - Sebastian'n'Jin Incorp. All rights reserved.
             </p>
         </footer>
     </body>
