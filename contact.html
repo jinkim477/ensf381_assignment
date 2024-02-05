@@ -20,17 +20,159 @@ Description : contact page for assignment 1
 <DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ENSF 381 Assignment 1">
+    <meta name="author" content="Jin Kim, Sebastian Nieto">
 
+    <title>R34 | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../image_assets/favicon.ico" type="image/x-icon">
+
+    <style>
+        #navi-links {
+            display: flex;
+            justify-content: space-around;
+            font-size: 200%;
+            width: 100%;
+            margin: 0%;
+            padding: 0px;
+            list-style-type: none;
+        }
+        
+        #navi-menu {
+            width: 100%;
+        }
+
+        .navi-options {
+            color:white;
+            text-decoration: none;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            
+        }
+
+        #header-section {
+            display: flex;
+            align-items: center;
+        }
+
+        #header-companyname {
+            display: inline-block;
+            color: white;
+            letter-spacing: 2px;
+            font-size: 50px;
+        }
+
+        #header-companylogo {
+            margin-right: 2%;
+            width:125px;
+            height:125px;
+        }
+
+        #contact-page-title {
+            text-align: center;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 2%;
+        }
+
+        #contact-para {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            font-size: 150%;
+            margin: 1%;
+        }
+
+        .contact-para-elements {
+            display: flex;
+            justify-content: center;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 1%;
+        }
+
+        #social-media-element {
+            display: flex;
+            justify-content: center;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 1%;
+        }
+
+        #social-media-block {
+            display: inline;
+            flex-direction: column;
+            margin: 1%;
+        }
+
+        #social-media-title {
+            display: flex;
+            align-items: center;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 0%;
+        }
+
+        .social-media-links {
+            display: flex;
+            justify-content: center;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 10%;
+        }
+
+        #copyright-text {
+            display: flex;
+            justify-content: center;
+            font-size: 150%;
+            margin: 1%;
+            color:white;
+        }
+        
+        body {
+            margin: 0%;
+        }
+
+        header {
+            background-color:black;
+            width:100%;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        div {
+            display: flex;
+        }
+
+        nav {
+            background-color: black;
+            width: 100%;
+            padding: 0.35%;
+        }
+
+        footer {
+            background-color: black;
+            padding:10px;
+            margin-top: 0%;
+        }
+    </style>
 </head>
 <body>
     <header>
         <!-- logo and website name go here: This is where your website's logo and name should be placed. The logo should
             be placed at the top left and the company name should be placed right after the logo.-->
+        <div id="header-section">
+            <img id="header-companylogo" src="image_assets/cat_logo.jpeg" alt="R34 logo">
+            <h1 id="header-companyname"><b>R34</b></h1>
+        </div>
     </header>
 
-    <div>
+    <div id="navi-menu">
         <!-- navigation links go here: The navigation links to other pages (home.html, products.html, contact.html, and
             login.html) are placed directly below the header. -->
+        <nav>
+            <ul id="navi-links">
+                <li><a href="index.html" class="navi-options">HOME</a></li>
+                <li><a href="products.html"class="navi-options">PRODUCTS</a></li>
+                <li><a href="contact.html" class="navi-options">CONTACT</a></li>
+                <li><a href="login.html" class="navi-options">LOGIN</a></li>
+            </ul>
+        </nav>
     </div>
 
     <main>
@@ -38,10 +180,36 @@ Description : contact page for assignment 1
             page must contain a message to the customers, email, phone number, and at least 2 social
             media links. When the user clicks on a link, they will be redirected to the social media
             website associated with that link. -->
+        <h1 id="contact-page-title">Contact Us</h1>
+            
+        <div id="contact-para">
+            <p class="contact-para-elements">
+                We are always here to help you with any questions or concerns you may have. Please feel free to contact us at any time.
+            </p>
+            <pre class="contact-para-elements">
+Email: <a href="mailto:r34official@gmail.com">r34official@gmail.com</a>
+            </pre>
+            <p class="contact-para-elements">
+                Phone: 1-800-123-4567
+            </p>
+            <div id="social-media-element">
+                <p id="social-media-title">
+                    Social Media: 
+                </p>
+                <div id="social-media-block">
+                    <a href="https://www.facebook.com" class="social-media-links">Facebook</a>
+                    <a href="https://www.instagram.com" class="social-media-links">Instagram</a>
+                    <a href="https://www.tiktok.com" class="social-media-links">TikTok</a>
+                </div>
+            </div>
+        </div>
     </main>
     
     <footer>
         <!-- copyright notice goes here -->
+        <p id="copyright-text">
+            © 2024 R34 - Sebastian'n'Jin Incorp. All rights reserved.
+        </p>
     </footer>
 </body>
 </html>
