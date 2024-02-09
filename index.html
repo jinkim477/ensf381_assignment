@@ -34,20 +34,18 @@ Description : hmtl hompage for assignment 1
     <header>
         <!-- logo and website name go here: This is where your website's logo and name should be placed. The logo should
             be placed at the top left and the company name should be placed right after the logo.-->
-            <img id="company_logo" src="image_assets/cat_logo.jpeg" alt="R34 logo">
+            <img id="company-logo" src="image_assets/cat_logo.jpeg" alt="R34 logo">
             <h1>SJR34</h1>
     </header>
 
-    <div id="nav_bar">
+    <div id="nav-bar">
         <!-- navigation links go here: The navigation links to other pages (home.html, products.html, contact.html, and
             login.html) are placed directly below the header. -->
         <nav>
-            <ul>
-                <li><a href="index.html" class="nav_option">HOME</a></li>
-                <li><a href="products.html" class="nav_option">PRODUCTS</a></li>
-                <li><a href="contact.html" class="nav_option">CONTACT</a></li>
-                <li><a href="login.html" class="nav_option">LOGIN</a></li>
-            </ul>
+            <a href="index.html" class="nav-option">Home</a>
+            <a href="products.html" class="nav-option">Products</a>
+            <a href="contact.html" class="nav-option">Contact</a>
+            <a href="login.html" class="nav-option">Login</a>
         </nav>
     </div>
 
@@ -60,9 +58,8 @@ Description : hmtl hompage for assignment 1
             followed by their review in a new line. -->
         <section class="about-us">
             <!-- about us contents go here -->
-            <h2 style="text-align: center">About Us</h2>
-            <hr style="border: 2px solid black; margin-bottom: 2%;">
-            <p style="text-align: center;">
+            <h2>About Us</h2>
+            <p>
                 At R34, our mission is to not only provide the highest quality garments in the market, but to also
                 continue to innovate and push the boundaries of what is possible in this industry. We strive to give
                 the absolute best customer service, ensuring that representatives are available 24/7 to assist with
@@ -75,65 +72,66 @@ Description : hmtl hompage for assignment 1
 
         <section class="shop-now">
             <!-- shop now button (as a link to the products page) -->
-            <div>
-                <a href="products.html" style="display: flex; justify-content: center">
-                    <button>SHOP NOW</button>
-                </a>
-            </div>
+            <a href="products.html">
+                <button id="shop-button">Shop Now</button>
+            </a>
         </section>
         <!-- customer reviews/testimonials section -->
         <section class="customer-reviews">
             <!-- add reviews as needed -->
             <h2>Customer Reviews</h2>
 
-            <hr style="border: 2px solid black; margin-bottom: 1%;">
+            <!-- Review 1 -->
+            <div class="review">
+                <img src="image_assets/brontacotues.gif" alt="Lebron James" class="reviewer-image">
+                <div class="reviewer-content">
+                    <div class="reviewer-name-rating">
+                        <h3>Lebron James</h3>
+                        <p class="rating">⭐️⭐️⭐️⭐️⭐️</p>
+                    </div>
+                    <p>
+                        "The quality is unmatched, and the fact that it's made from recycled materials is just the cherry on top.
+                        I will definitely be purchasing more from R34 in the future. I love wearing R34 on TACO TUESDAYYY!!!"
+                    </p>
+                </div>
+            </div>
 
-            <table>
-                <tr>
-                    <td>
-                        <div>
-                            <img src="image_assets/brontacotues.gif" alt="Lebron James" style="width:200px;height:200px;">
-                            <h2>Lebron James</h2>
-                        </div>
+            <!-- Review 1 -->
+            <div class="review">
+                <img src="image_assets/livvydunne.png" alt="Livvy Dunne" class="reviewer-image">
+                <div class="reviewer-content">
+                    <div class="reviewer-name-rating">
+                        <h3>Livvy Dunne</h3>
+                        <p class="rating">⭐️⭐️⭐️⭐️⭐️</p>
+                    </div>
+                    <p>
+                        "I've been a loyal customer of R34 for years now, and I can confidently say that they have never
+                        disappointed me. The customer service is top-notch, and the products are always of the highest quality."
+                    </p>
+                </div>
+            </div>
+        
 
-                        <p>
-                            "The quality is unmatched, and the fact that it's made from recycled materials is just the cherry on top.
-                            I will definitely be purchasing more from R34 in the future. I love wearing R34 on TACO TUESDAYYY!!!"
-                        </p>
-                    </td>
-
-                    <td>
-                        <div>
-                            <img src="image_assets/livvydunne.png" alt="Livvy Dunne" style="width:200px;height:200px;">
-                            <h2>Livvy Dunne</h2>
-                        </div>
-
-                        <p>
-                            "I've been a loyal customer of R34 for years now, and I can confidently say that they have never
-                            disappointed me. The customer service is top-notch, and the products are always of the highest quality."
-                        </p>
-                    </td>
-
-                    <td>
-                        <div>
-                            <img src="image_assets/jamescharles.jpeg" alt="James Charles" style="width:200px;height:200px;">
-                            <h2>James Charles</h2>
-                        </div>
-
-                        <p>
-                            "Hey sisters! I've been a loyal customer of R34 for years now, and I can confidently say that they have never
-                            disappointed me. I highly recommend R34 to anyone looking for sustainable, stylish clothing."
-                        </p>
-                    </td>
-                </tr>
-            </table>
+            <div class="review">
+                <img src="image_assets/jamescharles.jpeg" alt="James Charles" class="reviewer-image">
+                <div class="reviewer-content">
+                    <div class="reviewer-name-rating">
+                        <h3>James Charles</h3>
+                        <p class="rating">⭐️⭐️⭐️⭐️⭐️</p>
+                    </div>
+                    <p>
+                        "Hey sisters! I've been a loyal customer of R34 for years now, and I can confidently say that they have never
+                        disappointed me. I highly recommend R34 to anyone looking for sustainable, stylish clothing."
+                    </p>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
         <!-- copyright notice goes here -->
         <p>
-            © 2024 SJR34 - Sebastian'n'Jin Incorp. All rights reserved.
+            &copy; 2024 SJR34 - Sebastian'n'Jin Incorp. All rights reserved.
         </p>
     </footer>
 </body>
