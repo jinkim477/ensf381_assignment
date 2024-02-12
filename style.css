@@ -34,7 +34,7 @@ nav {
     display: flex;
     justify-content: space-around;
 }
-.nav-option {
+nav a {
     color: white;
     text-decoration: none;
     padding-top: 10px;
