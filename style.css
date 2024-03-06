@@ -203,8 +203,10 @@ h2 {
 }
 
 .contact-method {
+    background-color: #ddd;
     padding: 0px;
     margin: 0px;
+    border-radius: 10px;
 }
 
 .social-media-container {
@@ -270,6 +272,11 @@ h2 {
     opacity: 0.5;
     border: 0px;
     color: white;
+}
+
+.login-button:hover {
+    background-color: #45A049;
+    opacity: 1;
 }
 
 .signup-link {
