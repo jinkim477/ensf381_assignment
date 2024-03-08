@@ -1,63 +1,39 @@
-<!--
-=========================================================
-Name        : index.html
-Assignment  : Assignment 1
-Author(s)   : Jin Kim (30173509), Sebastian Nieto (30151244)
-Group       : 17
-Submission  : 2024-0?-??
-Description : hmtl hompage for assignment 1
-=========================================================
--->
-
-<!-- REQUIREMENTS: 
-                    Create the home page layout with HTML. The home page will have navigation links to
-                    other pages of the website, vision and mission of the company, and feedback from the
-                    previous customers.
-
-                    Display at least two customer feedback.
--->
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- add meta tags, title, and link to style.css here -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ENSF 381 Assignment 1">
+    <meta name="description" content="ENSF381 Assignment">
     <meta name="author" content="Jin Kim, Sebastian Nieto">
 
-    <title>SJ34 | Home</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="../image_assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="image_assets/favicon.ico" type="image/x-icon">
 
+    <title>SJR34 | Home</title>
 </head>
 <body>
-    <header>
-        <!-- logo and website name go here: This is where your website's logo and name should be placed. The logo should
-            be placed at the top left and the company name should be placed right after the logo.-->
-            <img id="company-logo" src="image_assets/cat_logo.jpeg" alt="R34 logo">
-            <h1>SJR34</h1>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">
+            <img src="image_assets/cat_logo.jpeg" alt="Company Logo">
+        </div>
+        <div class="company-name">
+            SJR34
+        </div>
     </header>
 
-    <div id="nav-bar">
-        <!-- navigation links go here: The navigation links to other pages (home.html, products.html, contact.html, and
-            login.html) are placed directly below the header. -->
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="products.html">Products</a>
-            <a href="contact.html">Contact</a>
-            <a href="login.html">Login</a>
-        </nav>
-    </div>
+    <!-- Navigation Section -->
+    <nav>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="login.html" class="nav-link">Login</a> 
+    </nav>
 
     <main>
-        <!-- Below the navigation section, where the primary content, “About Us” section
-            should be placed. You may add the mission and vision of the company in this section. There
-            will be a “Shop Now” button that will direct the user to the product page, and the button
-            should be placed right under the “About Us” section. You must add at least two customer
-            feedback in the “Customer Reviews” section. This section may contain a customer name
-            followed by their review in a new line. -->
+        <!-- About Us Section -->
         <section class="about-us">
-            <!-- about us contents go here -->
             <h2>About Us</h2>
             <p>
                 At R34, our mission is to not only provide the highest quality garments in the market, but to also
@@ -70,69 +46,51 @@ Description : hmtl hompage for assignment 1
             </p>
         </section>
 
+        <!-- Shop Now Button -->
         <section class="shop-now">
-            <!-- shop now button (as a link to the products page) -->
-            <a href="products.html">
-                <button id="shop-button">Shop Now</button>
-            </a>
+            <a href="products.html"><button class="shop-now-btn">Shop Now</button></a>
         </section>
-        <!-- customer reviews/testimonials section -->
+
+        <!-- Customer Reviews Section -->
         <section class="customer-reviews">
-            <!-- add reviews as needed -->
             <h2>Customer Reviews</h2>
 
             <!-- Review 1 -->
             <div class="review">
-                <img src="image_assets/brontacotues.gif" alt="Lebron James" class="reviewer-image">
-                <div class="reviewer-content">
-                    <div class="reviewer-name-rating">
-                        <h3>Lebron James</h3>
-                        <p class="rating">⭐️⭐️⭐️⭐️⭐️</p>
-                    </div>
-                    <p>
-                        "The quality is unmatched, and the fact that it's made from recycled materials is just the cherry on top.
-                        I will definitely be purchasing more from R34 in the future. I love wearing R34 on TACO TUESDAYYY!!!"
-                    </p>
-                </div>
+                <p>
+					<span class="customer-name">Lebron James:</span>
+                    "The quality is unmatched, and the fact that it's made from recycled materials is just the cherry on top.
+                    I will definitely be purchasing more from R34 in the future. I love wearing R34 on TACO TUESDAYYY!!!"
+                    <p class="rating">⭐⭐⭐⭐⭐</p>
+                </p>
             </div>
 
-            <!-- Review 1 -->
+            <!-- Review 2 -->
             <div class="review">
-                <img src="image_assets/livvydunne.png" alt="Livvy Dunne" class="reviewer-image">
-                <div class="reviewer-content">
-                    <div class="reviewer-name-rating">
-                        <h3>Livvy Dunne</h3>
-                        <p class="rating">⭐️⭐️⭐️⭐️⭐️</p>
-                    </div>
-                    <p>
-                        "I've been a loyal customer of R34 for years now, and I can confidently say that they have never
-                        disappointed me. The customer service is top-notch, and the products are always of the highest quality."
-                    </p>
-                </div>
+                <p>
+					<span class="customer-name">Livvy Dunne:</span>
+                    "I've been a loyal customer of R34 for years now, and I can confidently say that they have never
+                    disappointed me. The customer service is top-notch, and the products are always of the highest quality."
+                    <p class="rating">⭐⭐⭐⭐⭐</p>
+                </p>
             </div>
-        
 
             <div class="review">
-                <img src="image_assets/jamescharles.jpeg" alt="James Charles" class="reviewer-image">
-                <div class="reviewer-content">
-                    <div class="reviewer-name-rating">
-                        <h3>James Charles</h3>
-                        <p class="rating">⭐️⭐️⭐️⭐️⭐️</p>
-                    </div>
-                    <p>
-                        "Hey sisters! I've been a loyal customer of R34 for years now, and I can confidently say that they have never
-                        disappointed me. I highly recommend R34 to anyone looking for sustainable, stylish clothing."
-                    </p>
-                </div>
+                <p>
+                    <span class="customer-name">James Charles:</span>
+                    "Hey sisters! I've been a loyal customer of R34 for years now, and I can confidently say that they have never
+                    disappointed me. I highly recommend R34 to anyone looking for sustainable, stylish clothing."
+                    <p class="rating">⭐⭐⭐⭐⭐</p>
+                </p>
             </div>
+
+            <!-- Add more reviews as needed -->
         </section>
     </main>
 
-    <footer>
-        <!-- copyright notice goes here -->
-        <p>
-            &copy; 2024 SJR34 - Sebastian'n'Jin Incorp. All rights reserved.
-        </p>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 SJR34. All rights reserved.</p>
     </footer>
 </body>
 </html>

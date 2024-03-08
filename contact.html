@@ -1,68 +1,47 @@
-<!--
-=========================================================
-Name        : contact.html
-Assignment  : Assignment 1
-Author(s)   : Jin Kim (30173509), Sebastian Nieto (30151244)
-Group       : 17
-Submission  : 2024-0?-??
-Description : contact page for assignment 1
-=========================================================
--->
-
-<!-- REQUIREMENTS: 
-                    Create a contact page with HTML.
-                    
-                    Display contact information, such as email, phone number, and social media links. You do
-                    not need to put your personal social media profile’s link. Alternatively, you can redirect the
-                    user to facebook.com or instagram.com.
--->
-
+<!-- contact.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- add meta tags, title, and link to style.css here -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ENSF 381 Assignment 1">
+    <meta name="description" content="ENSF381 Assignment">
     <meta name="author" content="Jin Kim, Sebastian Nieto">
 
-    <title>SJR34 | Contact</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="../image_assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="image_assets/favicon.ico" type="image/x-icon">
 
+    <title>SJR34 | Contact</title>
 </head>
 <body>
-    <header>
-        <!-- logo and website name go here: This is where your website's logo and name should be placed. The logo should
-            be placed at the top left and the company name should be placed right after the logo.-->
-            <img id="company-logo" src="image_assets/cat_logo.jpeg" alt="R34 logo">
-            <h1>SJR34</h1>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">
+            <img src="image_assets/cat_logo.jpeg" alt="Company Logo">
+        </div>
+        <div class="company-name">
+            SJR34
+        </div>
     </header>
 
-    <div id="nav-bar">
-        <!-- navigation links go here: The navigation links to other pages (home.html, products.html, contact.html, and
-            login.html) are placed directly below the header. -->
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="products.html">Products</a>
-            <a href="contact.html">Contact</a>
-            <a href="login.html">Login</a>
-        </nav>
-    </div>
+    <!-- Navigation Section -->
+    <nav>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="login.html" class="nav-link">Login</a> 
+    </nav>
 
     <main>
-        <!-- Below the navigation bar, where the contact information should be displayed. This
-            page must contain a message to the customers, email, phone number, and at least 2 social
-            media links. When the user clicks on a link, they will be redirected to the social media
-            website associated with that link. -->
         <section class="contact-info">
             <h2>Reach Out to Us</h2>
-            <p>Thank you for visiting our website. If you have any questions or concerns, please feel free to contact us
-                using the information below. One of our representatives will get back to you as soon as possible.</p>
+            <p>
+                Thank you for visiting our website. If you have any questions or concerns, please feel free to contact us
+                using the information below. One of our representatives will get back to you as soon as possible.
+            </p>
 
             <div class="contact-method">
                 <h3>Email</h3>
-                <p>Email us at: <a href="mailto:info@sebjincorp.com">info@sebjincorp.com</a></p>
+                <p>Email us at: <a href="mailto:info@companyco.com">info@sebjincorp.com</a></p>
             </div>
 
             <div class="contact-method">
@@ -73,33 +52,18 @@ Description : contact page for assignment 1
             <div class="contact-method">
                 <h3>Social Media</h3>
                 <p>Connect with us on social media:</p>
-                <div class="social-media-container">
-                    <div class="contact-redirective">
-                        <a href="https://www.facebook.com" target="_blank"><img src="image_assets/facebook_logo.png" class="social-media-logo"></a>
-                        <a href="https://www.facebook.com" target="_blank" class="social-text-link">Facebook</a>
-                    </div>
-                    <div class="contact-redirective">
-                        <a href="https://www.instagram.com" target="_blank"><img src="image_assets/instagram_logo.png" class="social-media-logo"></a>
-                        <a href="https://www.instagram.com" target="_blank" class="social-text-link">Instagram</a>
-                    </div>
-                    <div class="contact-redirective">
-                        <a href="https://www.twitter.com" target="_blank"><img src="image_assets/x_twitter_logo.webp" class="social-media-logo"></a>
-                        <a href="https://www.twitter.com" target="_blank" class="social-text-link">X (Twitter)</a>
-                    </div>
-                    <div class="contact-redirective">
-                        <a href="https://www.tiktok.com" target="_blank"><img src="image_assets/tiktok_logo.png" class="social-media-logo"></a>
-                        <a href="https://www.tiktok.com" target="_blank" class="social-text-link">TikTok</a>
-                    </div>
-                </div>
+                <ul>
+                    <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                    <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                    <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                </ul>
             </div>
         </section>
     </main>
-    
-    <footer>
-        <!-- copyright notice goes here -->
-        <p>
-            © 2024 SJR34 - Sebastian'n'Jin Incorp. All rights reserved.
-        </p>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 SJR34. All rights reserved.</p>
     </footer>
 </body>
 </html>
