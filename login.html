@@ -75,7 +75,7 @@ document.querySelector('.login-form form').addEventListener('submit', function(e
                     showMessage('Incorrect username or password. Please try again.');
                 }
             })
-            .catch(error => {alert("API call was unsuccessful")})
+        .catch(error => {alert("API call was unsuccessful")})
 
     });
     function showMessage(message) {
@@ -84,6 +84,11 @@ document.querySelector('.login-form form').addEventListener('submit', function(e
         messageBox = document.createElement('div');
         messageBox.id = 'message-box';
         document.querySelector('main').appendChild(messageBox);
+
+        messageBox.style.border = '2px solid black';
+        messageBox.style.backgroundColor = '#f9f9f9';
+        messageBox.style.padding = '10px';
+        messageBox.style.margin = '20px';
     }
     const messageText = document.createElement('p');
     messageText.textContent = message;
