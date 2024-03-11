@@ -50,4 +50,45 @@
         <p>&copy; 2024 SJR34. All rights reserved.</p>
     </footer>
 </body>
+<script>
+document.querySelector('.login-form form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+        fetch('https://jsonplaceholder.typicode.com/users')
+            .then(response => {
+                return response.json();
+            })
+            .then(users => {
+                // Extracting name and email from each user object
+                const userDetails = users.map(user => {
+                    return {
+                        name: user.username,
+                        email: user.email
+                    };
+                });
+                const user = userDetails.find(user => user.name === username);
+
+                if (user && user.email === password) {
+                    showMessage("Login Successful");
+                } else {
+                    showMessage('Incorrect username or password. Please try again.');
+                }
+            })
+            .catch(error => {alert("API call was unsuccessful")})
+
+    });
+    function showMessage(message) {
+    let messageBox = document.getElementById('message-box');
+    if (!messageBox) {
+        messageBox = document.createElement('div');
+        messageBox.id = 'message-box';
+        document.querySelector('main').appendChild(messageBox);
+    }
+    const messageText = document.createElement('p');
+    messageText.textContent = message;
+    messageBox.innerHTML = ''; // Clear previous content
+    messageBox.appendChild(messageText);
+}
+</script>
 </html>
