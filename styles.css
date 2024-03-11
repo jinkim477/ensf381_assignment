@@ -217,6 +217,12 @@ form input {
     opacity: 1.0
 }
 
+#message-box{
+    border: 2px solid black;
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin: 20px;
+}
 /* Signup Link Styles */
 .signup-link {
     color: #007BFF;
