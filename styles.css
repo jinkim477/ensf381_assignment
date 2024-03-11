@@ -44,6 +44,7 @@ main {
     background-color: #ddd;
     padding: 20px;
     margin: 20px;
+    border-radius: 10px;
 }
 
 /* Customer Reviews Section Styles */
@@ -51,6 +52,7 @@ main {
     background-color: #ddd;
     padding: 20px;
     margin: 20px;
+    border-radius: 10px;
 }
 
 /* Shop Now Button Styles */
@@ -85,6 +87,7 @@ main {
     margin: 20px;
     margin: 0 auto;
     text-align: center;
+    border-radius: 10px;
 }
 
 /* Product Styling */
@@ -132,6 +135,18 @@ main {
     background-color: #45A049;
 }
 
+.cart {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    width: 100%;
+}
+
+.cart-item{
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+}
 
 /* Contact Information Section Styles */
 .contact-info {
