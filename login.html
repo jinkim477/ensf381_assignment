@@ -63,6 +63,7 @@ document.querySelector('.login-form form').addEventListener('submit', function(e
                 // Extracting name and email from each user object
                 const userDetails = users.map(user => {
                     return {
+//NOTE: As the gif showed, username is checked against the username from the JSON link, as opposed to the PDF where is says to use name.
                         name: user.username,
                         email: user.email
                     };

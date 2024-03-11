@@ -204,7 +204,7 @@ main {
 }
 
 /* Login Form Section Styles */
-.login-form {
+.login-form, .signup-form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -228,7 +228,7 @@ form input {
 }
 
 /* Login Button Styles */
-.login-btn {
+.login-btn, .signup-btn {
     background-color: #4CAF50;
     color: white;
     padding: 10px;
@@ -239,7 +239,7 @@ form input {
     opacity: .5
 }
 
-.login-btn:hover {
+.login-btn:hover, .signup-btn:hover {
     background-color: #45A049;
     opacity: 1.0
 }
