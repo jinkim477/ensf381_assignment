@@ -133,11 +133,8 @@
         }
 
         function updateCart() {
-        
-            while (cartDisplay.firstChild) {
-                cartDisplay.removeChild(cartDisplay.firstChild);
-            }
 
+            cartDisplay.innerHTML = "";
             for (let i = 0; i < cart.length; i++) {
                 const product = cart[i];
                 const productDisplay = document.createElement("div");

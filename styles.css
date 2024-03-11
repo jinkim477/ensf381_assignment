@@ -165,7 +165,7 @@ main {
 }
 
 .product-display button:hover {
-    background-color:crimson;
+    background-color:#ff0000;
 }
 
 .product-elements {
