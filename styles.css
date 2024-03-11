@@ -148,6 +148,33 @@ main {
     justify-content:center;
 }
 
+.product-display{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-display button {
+    background-color: darkred;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.product-display button:hover {
+    background-color:crimson;
+}
+
+.product-elements {
+    display: flex;
+    align-content:center;
+    margin: 3px;
+    padding: 3px;
+}
+
 /* Contact Information Section Styles */
 .contact-info {
 	background-color: #ddd;
