@@ -3,23 +3,16 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import reviews from "../data/review";
 
-const styles = {
-    page: {
-        textAlign: "left",
-        padding: "10px",
-        fontSize: "1.5rem",
-    },
-    shopButton: {
-        fontSize: "1.5rem",
-        padding: "10px",
-    },
-    shopText: {
-        textDecoration: "none",
-        color: "black",
-    },
-};
+// Added as little styling as possible to resemble the gif example.
 
 const HomeMainSection = () => {
+
+    const styles = {
+        showNowText: {
+            textDecoration: "none",
+            color: "black",
+        },
+    };
 
     const [randomReviews, setRandomReviews] = useState([]);
 
@@ -39,7 +32,7 @@ const HomeMainSection = () => {
     };
 
     return (
-        <div style={styles.page}>
+        <div >
             <section>
                 <h2>About Us</h2>
                 <p>
@@ -47,12 +40,12 @@ const HomeMainSection = () => {
                     high-quality products and exceptional customer service. Learn more
                     about our story and commitment to your satisfaction.
                 </p>
-                <button style={styles.shopButton}>
-                    <Link to="/products" style={styles.shopText}>Shop Now</Link>
+                <button style={styles.shopNowButton}>
+                    <Link to="/products" style={styles.showNowText}>Shop Now</Link>
                 </button>
             </section>
 
-            <section>
+            <section style={styles.section}>
                 <h2>Customer Reviews</h2>
                 {randomReviews.map((review, index) => (
                     <div key={index}>

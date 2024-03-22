@@ -1,24 +1,25 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+// Added as little styling as possible to resemble the gif example.
+
 const styles = {
-    header: {
+    top: {
         display: "flex",
         justifyContent: "space-between",
-        alignItems: "center",
     },
-    logo: {
-        width: "80px",
+    companyLogo: {
+        width: '80px',
     },
-    companyName: {
-        fontSize: "1.5rem",
+    companyName:{
+        display: "flex",
+        alignItems: 'center',
     },
-    navigation: {
+    navBar: {
         display: "flex",
         justifyContent: "space-between",
         listStyleType: "none",
-        padding: "10px",
-        fontSize: "1.5rem",
+        padding: 0,
     },
 };
 
@@ -26,11 +27,11 @@ const Header = () => {
     return (
         <header>
             <nav>
-                <div style={styles.header}>
-                    <img src="/images/logo.png" alt="logo" style={styles.logo}/>
+                <div style={styles.top}>
+                    <img src="/images/logo.png" alt="logo" style={styles.companyLogo}/>
                     <span style={styles.companyName}>Company Name</span>
-                </div>
-                <ul style={styles.navigation}>
+                </div>  
+                <ul style={styles.navBar}>
                     <li>
                         <Link to="/">Home</Link>
                     </li>

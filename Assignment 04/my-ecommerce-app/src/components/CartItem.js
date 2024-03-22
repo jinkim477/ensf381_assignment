@@ -26,10 +26,10 @@ const CartItem = (product) => {
   return (
       <div >
           <img src={product.image} alt={product.name} />
-          <p>{product.name}</p>
-          <p>${product.price}</p>
-          <p>Quantity: {product.quantity}</p>
-          <p>Total Price: ${product.price * product.quantity}</p>
+          <p >{product.name}</p>
+          <p >${product.price}</p>
+          <p >Quantity: {product.quantity}</p>
+          <p >Total Price: ${product.price * product.quantity}</p>
           <button onClick={handleRemoveFromCart} >Remove</button>
       </div>
   );

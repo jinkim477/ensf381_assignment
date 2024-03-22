@@ -16,24 +16,13 @@ import { useState } from "react";
 */
 
 
+const ProductItem = (product) => {  
+    const styles = {
+        productImage: {
+            width: "250px",
+        }
+    };
 
-const styles = {
-    productImage: {
-        width: "300px",
-    },
-    productInfo: {
-        textAlign: "left",
-        fontSize: "1.5rem",
-        margin: "0px",
-    },
-    addToCartButton: {
-        display: "flex",
-        justifyContent: "left",
-        fontSize: "1.5rem",
-    },
-};
-
-const ProductItem = (product) => {
     const [showDescription, setShowDescription] = useState(false);
 
 
@@ -54,19 +43,18 @@ const ProductItem = (product) => {
 
     return (
         <div>
-            <img src={product.image} alt={product.name} style={styles.productImage} />
+            <img src={product.image} alt={product.name} style={styles.productImage}/>
             <p
-                style={styles.productInfo}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
             >
                 {product.name}
             </p>
-            <p style={styles.productInfo}>${product.price}</p>
-            <button style={styles.addToCartButton} onClick={handleAddToCart}>
+            <p >${product.price}</p>
+            <button onClick={handleAddToCart}>
                 Add to Cart
             </button>
-            {showDescription && <p style={styles.productInfo}>{product.description}</p>}
+            {showDescription && <p >{product.description}</p>}
         </div>
     );
 };

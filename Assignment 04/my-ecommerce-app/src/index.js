@@ -1,4 +1,4 @@
-// Authors: Jin Kim (30173509), Sebastian Nieto (???????)
+// Authors: Jin Kim (30173509), Sebastian Nieto (30151244)
 
 import React from 'react';
 import ReactDOM from 'react-dom/client';

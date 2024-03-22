@@ -14,13 +14,6 @@ import product from '../data/product';
       to create an instance of the ProductItem component.
 */
 
-const styles = {
-    product: {
-        display: "flex",
-        justifyContent: "left",
-    },
-};
-
 const ProductList = () => {
 
     const productsData = product;
@@ -28,7 +21,7 @@ const ProductList = () => {
     return (
         <div >
             {productsData.map((product, index) => (
-                <div key={index} style={styles.product} >
+                <div key={index} >
                     {ProductItem(product)}
                 </div>
             ))};

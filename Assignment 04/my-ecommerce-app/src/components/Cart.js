@@ -7,24 +7,14 @@ import ProductItem from './ProductItem';
     - Calculates and displays the total price of all items in the cart.
 */
 
-const styles = {
-    cart: {
-        display: "flex",
-        justifyContent: "left",
-        flexDirection: "column",
-        textAlign: "left",
-    },
-};
-
 const Cart = () => {
     const cart = [];
-    
 
     return (
-        <div style={styles.cart} >
+        <div>
             <h1>Shopping Cart</h1>
 
-            <p style={{fontSize:"1.5rem"}}>Total (In Cart): $0.00</p>
+            <p>Total (In Cart): $0.00</p>
         </div>
     );
 };
