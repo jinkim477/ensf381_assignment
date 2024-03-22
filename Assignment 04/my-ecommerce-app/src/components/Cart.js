@@ -1,20 +1,23 @@
 import React from 'react';
-import ProductItem from './ProductItem';
+import CartItem from './CartItem';
 
-/*
-    - Pass each item in the cart to CartItem component to create an instance of the CartItem component.
-    
-    - Calculates and displays the total price of all items in the cart.
-*/
+const Cart = ({ cartItems, removeFromCart }) => {
 
-const Cart = () => {
-    const cart = [];
+    function totalCost(items) {
+        return items.reduce((total, item) => total + item.price * item.quantity, 0).toFixed(2);
+    };
 
     return (
         <div>
             <h1>Shopping Cart</h1>
-
-            <p>Total (In Cart): $0.00</p>
+            <div >
+                {cartItems.map((item) => (
+                    <div key={item.id}>
+                        <CartItem item={item} removeFromCart={removeFromCart} />
+                    </div>
+                ))}
+            </div>
+            <p>Total (In Cart): ${totalCost(cartItems)} </p>
         </div>
     );
 };
