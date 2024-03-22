@@ -1,8 +1,8 @@
 import './App.css';
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Homepage from './components/Homepage';
-import Products from './components/Products';
+import Productpage from './components/Productpage';
 import Login from './components/Login';
 
 
@@ -12,7 +12,7 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<Homepage />} />
-          <Route path="/products" element={<Products />} />
+          <Route path="/products" element={<Productpage />} />
           <Route path="/login" element={<Login />} />
         </Routes>
       </div>
