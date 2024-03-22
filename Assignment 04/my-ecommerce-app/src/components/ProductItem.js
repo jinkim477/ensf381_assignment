@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 
 
 /* 
@@ -15,10 +16,58 @@ import React from "react";
 */
 
 
-const ProductItem = () => {
-	return ( <div>
 
-    </div>
+const styles = {
+    productImage: {
+        width: "300px",
+    },
+    productInfo: {
+        textAlign: "left",
+        fontSize: "1.5rem",
+        margin: "0px",
+    },
+    addToCartButton: {
+        display: "flex",
+        justifyContent: "left",
+        fontSize: "1.5rem",
+    },
+};
+
+const ProductItem = (product) => {
+    const [showDescription, setShowDescription] = useState(false);
+
+
+    const handleMouseEnter = () => {
+        setShowDescription(true);
+    };
+
+
+    const handleMouseLeave = () => {
+        setShowDescription(false);
+    };
+
+
+    const handleAddToCart = () => {
+        // Add your logic for adding the product to the cart here
+        
+    };
+
+    return (
+        <div>
+            <img src={product.image} alt={product.name} style={styles.productImage} />
+            <p
+                style={styles.productInfo}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+            >
+                {product.name}
+            </p>
+            <p style={styles.productInfo}>${product.price}</p>
+            <button style={styles.addToCartButton} onClick={handleAddToCart}>
+                Add to Cart
+            </button>
+            {showDescription && <p style={styles.productInfo}>{product.description}</p>}
+        </div>
     );
 };
 

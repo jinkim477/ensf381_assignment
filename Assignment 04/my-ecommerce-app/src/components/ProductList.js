@@ -9,16 +9,29 @@ import product from '../data/product';
 
     - Import the productsData array from the products.js file, which contains
       information about the products.
-      
+
     - Pass each product in the productsData array to the ProductItem component
       to create an instance of the ProductItem component.
 */
 
+const styles = {
+    product: {
+        display: "flex",
+        justifyContent: "left",
+    },
+};
+
 const ProductList = () => {
+
+    const productsData = product;
 
     return (
         <div >
-            
+            {productsData.map((product, index) => (
+                <div key={index} style={styles.product} >
+                    {ProductItem(product)}
+                </div>
+            ))};
         </div>
     );
 };

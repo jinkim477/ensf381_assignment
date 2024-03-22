@@ -16,12 +16,23 @@ import React from 'react';
       0, the item will be removed from the cart.
 */
 
-const CartItem = () => {
-    return (
-        <div >
+const CartItem = (product) => {
+  
+  const handleRemoveFromCart = () => {
+    // Add your logic for removing the product from the cart here
+    
+  };
 
-        </div>
-    );
+  return (
+      <div >
+          <img src={product.image} alt={product.name} />
+          <p>{product.name}</p>
+          <p>${product.price}</p>
+          <p>Quantity: {product.quantity}</p>
+          <p>Total Price: ${product.price * product.quantity}</p>
+          <button onClick={handleRemoveFromCart} >Remove</button>
+      </div>
+  );
 };
 
 export default CartItem;
