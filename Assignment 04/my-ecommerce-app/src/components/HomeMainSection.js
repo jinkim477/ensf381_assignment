@@ -22,7 +22,6 @@ const HomeMainSection = () => {
         setRandomReviews(twoRandomReviews);
     }, []);
 
-    
     const renderStars = (rating) => {
         let stars = "";
         for(let i = 0; i < rating; i++) {
