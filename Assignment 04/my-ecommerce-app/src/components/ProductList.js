@@ -1,20 +1,15 @@
+// ProductList.js
 import React from 'react';
-import ProductItem from './ProductItem';
-import product from '../data/product';
+import Product from './Product';
 
-const ProductList = ({ addToCart }) => {
-
-    const productsData = product;
-
-    return (
-        <div >
-            {productsData.map((product, index) => (
-                <div key={index} >
-                    <ProductItem product={product} addToCart={addToCart} />
-                </div>
-            ))}
-        </div>
-    );
+const ProductList = ({ products, onAddToCart }) => {
+  return (
+    <div className="product-list">
+      {products.map(product => (
+        <Product key={product.id} product={product} onAddToCart={onAddToCart} />
+      ))}
+    </div>
+  );
 };
 
 export default ProductList;

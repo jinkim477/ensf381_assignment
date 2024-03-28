@@ -1,15 +1,24 @@
+// CartItem.js
 import React from 'react';
 
-const CartItem = ({ item, removeFromCart }) => {
+const CartItem = ({ product, onRemove }) => {
+  const { id, name, price, image, quantity } = product;
+
+  const handleRemove = () => {
+    onRemove(id);
+  };
+
   return (
-      <div >
-          <img src={item.image} alt={item.name} style={{ width: '100px'}} />
-          <p >{item.name}</p>
-          <p >${item.price}</p>
-          <p >Quantity: {item.quantity}</p>
-          <p >Total Price: ${(item.price * item.quantity).toFixed(2)}</p>
-          <button onClick={() => removeFromCart(item)}>Remove</button>
+    <div className="cart-item">
+      <img src={image} alt={name} style={{ width: '20%' }} />
+      <div className="info">
+        <div className="name">{name}</div>
+        <div className="price">Price: ${price}</div>
+        <div>Quantity: {quantity}</div>
+        <div>Total: ${(price * quantity).toFixed(2)}</div>
+        <button onClick={handleRemove}>Remove</button>
       </div>
+    </div>
   );
 };
 
