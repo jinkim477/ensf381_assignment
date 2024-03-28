@@ -1,3 +1,5 @@
+// Author(s): Sebastian Nieto (30151244), Jin Kim (30173509)
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
