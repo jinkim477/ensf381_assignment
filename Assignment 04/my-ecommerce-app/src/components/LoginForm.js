@@ -1,11 +1,26 @@
 import React from 'react';
 import { useState } from 'react';
 import SignupForm from './SignupForm';
+import { loginUser } from '../services/apiService';
 
 const LoginForm = () => {
     const [signupOn, setSignupOn] = useState(false);
     const handleSignupButton = () => {
         setSignupOn(true);
+    };
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        const formData = new FormData(e.target);
+        const userData = {
+            username: formData.get('username'),
+            password: formData.get('password')
+        };
+
+        try {
+            await loginUser(userData);
+        } catch (error) {
+            console.error('Login Error:', error.message);
+        }
     };
 
     return (
@@ -13,7 +28,7 @@ const LoginForm = () => {
             {signupOn ? <SignupForm /> : (
                 <div>
                     <h2>Login</h2>
-                    <form>
+                    <form action={{ apiService }} >
                         <label htmlFor="username">Username:</label>
                         <input type="text" id="username" name="username" placeholder="Enter your username" required/>
                             <br />

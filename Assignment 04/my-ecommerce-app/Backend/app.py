@@ -7,29 +7,6 @@ import os
 app = Flask(__name__)
 CORS(app)
 
-@app.route('/login', methods=['POST'])
-def register_user():
-    username = request.form.get("username")
-    password = request.form.get("password")
-    email = request.form.get("email")
-    
-    for user in users:
-        if user["username"] == username:
-            return ('', 404) # Display an error message in the frontend
-        else:
-            users.append({
-                "username": username,
-                "password": password,
-                "email": email
-            })
-            return 201
-    return ('', 400)
-
-@app.route('/login', methods=['POST'])
-def sign_in():
-    
-    return
-
 users = []
 
 products = [
@@ -104,3 +81,29 @@ products = [
         "image": 'images/product10.jpg'
     }
 ]
+
+@app.route('/login/register', methods=['POST'])
+def register_user():
+    username = request.form.get("username")
+    password = request.form.get("password")
+    email = request.form.get("email")
+    
+    for user in users:
+        if user["username"] == username:
+            return ('', 409) # Display an error message in the frontend
+    users.append({
+        "username": username,
+        "password": password,
+        "email": email
+    })
+    return jsonify(message="User registered successfully"), 201
+
+
+@app.route('/login/signin', methods=['POST'])
+def sign_in():
+    
+    return
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
